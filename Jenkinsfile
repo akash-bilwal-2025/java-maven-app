@@ -16,7 +16,17 @@ pipeline {
             steps {
                 echo 'Deploying the Pipeline'
             }
+        }        
+    }
+    post{
+        always{
+            // Execute always
         }
-        
+        success{
+            //While failing run at that time
+        }
+        failed{
+             
+        }
     }
 }
